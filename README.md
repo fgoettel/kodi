@@ -4,7 +4,7 @@ Individualize Kodi
 ## Hardware Setup 
 Raspberry Pi3 + Hifiberry Amp2. 
 
-HifiBerry Amp2 has the same S/W config as the DAC+ (see https://www.hifiberry.com/shop/boards/hifiberry-amp2/). 
+[HifiBerry Amp2 has the same S/W config as the DAC+.](https://www.hifiberry.com/shop/boards/hifiberry-amp2/) 
 
 ## Installation
 Inspired by: https://www.hifiberry.com/build/documentation/libreelec-installation-and-configuration/
