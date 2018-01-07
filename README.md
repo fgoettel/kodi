@@ -45,5 +45,10 @@ amixer -c 0 set Digital 80%
 You may want to experiment with the percentage volume in order to tune it to your desired preference.
 
 
-## OSD
-Deactivate OSD after x seconds:
+## Configure OSD
+Deactivate OSD after 5 seconds.
+**TODO**
+
+## Control Value via Remote Control
+Adjust the [keymap](http://kodi.wiki/view/Keymap) to control the volume.
+**TODO**
