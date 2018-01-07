@@ -7,7 +7,7 @@ Raspberry Pi3 + Hifiberry Amp2.
 [HifiBerry Amp2 has the same S/W config as the DAC+.](https://www.hifiberry.com/shop/boards/hifiberry-amp2/) 
 
 ## Installation
-Inspired by: https://www.hifiberry.com/build/documentation/libreelec-installation-and-configuration/
+[Inspired by the HifiBerry instructions.](https://www.hifiberry.com/build/documentation/libreelec-installation-and-configuration/)
 
 ### Install LibreElec / Kodi on the Raspberry
 1. Download installer from libreelec.tv
