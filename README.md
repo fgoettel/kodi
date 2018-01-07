@@ -44,11 +44,41 @@ amixer -c 0 set Digital 80%
 ```
 You may want to experiment with the percentage volume in order to tune it to your desired preference.
 
+## Save user information
+User information is saved at 
+```
+~/.kodi/userdata/
+```
+## Enable logging
+[Enable logging of all keystrokes.](http://kodi.wiki/view/Log_file/Advanced#Turn_on_debugging_using_a_file_.28advancedsettings.xml.29)
+Logfiles will be stored in `userdata/temp/`. 
 
 ## Configure OSD
 Deactivate OSD after 5 seconds.
 **TODO**
 
 ## Control Value via Remote Control
-Adjust the [keymap](http://kodi.wiki/view/Keymap) to control the volume.
-**TODO**
+Some facts: 
+* The volume can be controlled via amixer or kodi
+  * Amixer `amixer set Digital 95%`
+  * Kodi: eg. remote app: press +/- on audio
+* The TV (Samsung) does not forward the volume key presses
+
+*Idea*: Adjust the [keymap](http://kodi.wiki/view/Keymap) to let up/down control the volume.
+1. Create `keymaps` folder in userdata: 
+```
+~/.kodi/userdata/keymaps
+```
+2. Create a `remote.xml` file with the following content:
+```xml
+<?xml version="1.0" encoding="UTF-8" ?>
+<keymap>
+    <FullScreenVideo>
+        <remote>
+            <down>VolumeDown</down>
+            <up>VolumeUp</up>
+        </remote>
+    </FullScreenVideo>
+</keymap>
+```
+3. reboot
