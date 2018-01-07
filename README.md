@@ -18,7 +18,9 @@ Raspberry Pi3 + Hifiberry Amp2.
 6. Confirm writing the image onto the selected SD card.
 7. Once the image is written onto the card, disconnect it from your computer and plug it into the RPi.
 8. Connect all the cables and power it.
-9. Once the system boots up, make sure that the SSH service is enabled and connect to the device over SSH using a SSH client of your choice. Log in using the default logon credentials: root/libreelec. Default address is "libreelec".
+9. Adjust zoom settings to fit on the screen.
+
+*Optional*: Once the system boots up, make sure that the SSH service is enabled and connect to the device over SSH using a SSH client of your choice. Log in using the default logon credentials: root/libreelec. Default address is "libreelec".
 
 ### Setup the HifiBerry
 1. Gain write privileges: 
@@ -83,8 +85,28 @@ Some facts:
 
 ## Configure OSD
 Deactivate OSD after 5 seconds.
-**TODO**
 
+### Copy skin to user modifiable location
+1. Identify skin (e.g. `find / -name DialogSeekBar.xml` leads to it)
+2. Copy it to user data. E.g.
+```shell
+cp -R /usr/share/kodi/addons/skin.estuary ~/.kodi/addons/skin.estuary.bla
+```
+3. Adjust the `addon.xml` inside the copied dir to fit the dir.
+4. Enable inside addons 
+5. Restart
+
+### Adjust skin
+1. Figure out, which OSDs are loaded (inspect the log).
+2. Adjust the `<visible>` tag to let the OSD auto-disappear
+E.g. insert system idle condition
+```xml
+...
+<visible> [ condA | condB  | ... ] + !System.IdleTime(5) </visible>
+```
+Inside `VideoOSD.xml` and `DialogSeekBar.xml`
+
+3. Save
 
 
 ## Stop when TV shutdown
