@@ -53,11 +53,8 @@ User information is saved at
 [Enable logging of all keystrokes.](http://kodi.wiki/view/Log_file/Advanced#Turn_on_debugging_using_a_file_.28advancedsettings.xml.29)
 Logfiles will be stored in `userdata/temp/`. 
 
-## Configure OSD
-Deactivate OSD after 5 seconds.
-**TODO**
 
-## Control Value via Remote Control
+## Control Volume via Samsung Remote Control
 Some facts: 
 * The volume can be controlled via amixer or kodi
   * Amixer `amixer set Digital 95%`
@@ -82,3 +79,14 @@ Some facts:
 </keymap>
 ```
 3. reboot
+
+
+## Configure OSD
+Deactivate OSD after 5 seconds.
+**TODO**
+
+
+
+## Stop when TV shutdown
+Stop everything when TV is shutdown.
+**TODO**
