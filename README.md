@@ -64,6 +64,10 @@ Some facts:
 * The TV (Samsung) does not forward the volume key presses
 
 *Idea*: Adjust the [keymap](http://kodi.wiki/view/Keymap) to let up/down control the volume.
+1. Install the keymap editor in Add-ons. 
+2. Use up/down buttons during fullscreen video to control volume. 
+
+Or do it manually: 
 1. Create `keymaps` folder in userdata: 
 ```
 ~/.kodi/userdata/keymaps
