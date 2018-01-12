@@ -111,4 +111,5 @@ Inside `VideoOSD.xml` and `DialogSeekBar.xml`
 
 ## Stop when TV shutdown
 Stop everything when TV is shutdown.
-**TODO**
+
+Settings -> System -> Input -> Peripherals -> CEC Adapter -> When the TV is switching off
